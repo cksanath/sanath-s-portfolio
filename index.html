@@ -23,26 +23,63 @@
             <h3>About Me</h3>
             <p>Hi , Iam Sanath C Iam a Full Stack Developer</p>
             <img src="./images/cartoon-boy-sitting-desk-laptop-front-him-cartoon-boy-sitting-desk-laptop-front-him-358662119.webp"
-                width="400">
+                width="400" alt="illustartion of a full stack developer working on a laptop">
         </section>
         <article>
             <section id="skills">
                 <h3>My Skills</h3>
                 <ul>
-                    <li>html&css</li>
-                    <li>javascript</li>
+                    <li>Html & Css</li>
+                    <li>Javascript</li>
                     <li>React</li>
                 </ul>
             </section>
         </article>
+
+        <section id="projects">Projects</section>
+        <ul>
+            <li>Personal Portfolio using html</li>
+            <a href="https://cksanath.github.io/sanath-s-portfolio/">view</a>
+            <li>Updated portfolio with contact form</li>
+            <a href=""></a>
+
+        </ul>
     </main>
     <footer>
         <section id="contact">
             <h3>Contact Me</h3>
-            <p>email id:sanathck66@gmail.com</p>
-            <p>phone:97465443397</p>
 
+            <form action="">
+                <label for="text">Name:</label>
+                <input type="text" id="name" size="40" name="name" placeholder="enter you name" minlength="3"
+                    maxlength="20">
+                <br />
+                <br />
+                <label for="email">Email:</label>
+                <input type="email" name="email" size="40" id="email" required placeholder="enter your email id"
+                    minlength="4">
+
+                <br />
+                <br />
+
+                <label for="subject">Subject</label>
+                <select name="subject" id="subject">services
+                    <option value="web development">web development</option>
+                    <option value=" design & deployment">design and deployment</option>
+                    <option value="ecommerce">ecommerce</option>
+                </select>
+
+                <br />
+                <br />
+
+                <label for="text">Message</label>
+                <textarea id="message" name="message" cols="40" rows="4"></textarea>
+                <br />
+                <br />
+                <button type="submit">submit</button>
+                <button type="reset">reset</button>
         </section>
+        </form>
 
     </footer>
 </body>
