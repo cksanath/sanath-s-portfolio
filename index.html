@@ -5,30 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+
 </head>
 
 <body>
     <header>
-        <h1>Sanath CK</h1>
-        <h2>Full Stack Developer</h2>
+        <h1><b><span style="color:blue">Hi, &nbsp;</b></span> I'm Sanath CK</h1>
+        <h2><span style="color:blue;">Full Stack Developer</span></h2>
+
         <nav>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <ul class=" nav-menu">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+
         </nav>
     </header>
 
     <main>
         <section id="about">
-            <h3>About Me</h3>
+            <h3 style="background: linear-gradient(to right,white,blue); padding:10px;">About Me</h3>
             <p>Hi , Iam Sanath C Iam a Full Stack Developer</p>
-            <img src="./images/cartoon-boy-sitting-desk-laptop-front-him-cartoon-boy-sitting-desk-laptop-front-him-358662119.webp"
-                width="400" alt="illustartion of a full stack developer working on a laptop">
+            <figure>
+                <img src="./images/cartoon-boy-sitting-desk-laptop-front-him-cartoon-boy-sitting-desk-laptop-front-him-358662119.webp"
+                    width="400" alt="illustartion of a full stack developer working on a laptop">
+
+            </figure>
+
         </section>
         <article>
             <section id="skills">
-                <h3>My Skills</h3>
+                <h3 style="background: linear-gradient(to right,white,blue); padding:10px;">My Skills</h3>
                 <ul>
                     <li>Html & Css</li>
                     <li>Javascript</li>
@@ -38,21 +50,24 @@
         </article>
 
         <section id="projects">
-            <h3>Projects</h3>
+            <h3 style="background: linear-gradient(to right,white,blue); padding:10px;">Projects</h3>
+            <ul>
+                <li>Personal Portfolio using html</li>
+                <a href="https://cksanath.github.io/sanath-s-portfolio/">view</a>
+                <li>Updated portfolio with contact form</li>
+                <a href="https://cksanath.github.io/sanath-s-portfolio/">view</a>
+            </ul>
         </section>
-        <ul>
-            <li>Personal Portfolio using html</li>
-            <a href="https://cksanath.github.io/sanath-s-portfolio/">view</a>
-            <li>Updated portfolio with contact form</li>
-            <a href="https://cksanath.github.io/sanath-s-portfolio/">view</a>
 
-        </ul>
+
+
     </main>
-    <footer>
-        <section id="contact">
-            <h3>Contact Me</h3>
 
-            <form action="">
+    <article>
+        <section id="contact " style="text-align:center;">
+            <h3 style="background: linear-gradient(to right,white,blue); padding:10px;">Contact Me</h3>
+
+            <form action="POST">
                 <label for="text">Name:</label>
                 <input type="text" id="name" size="40" name="name" placeholder="enter you name" minlength="3"
                     maxlength="20">
@@ -79,11 +94,14 @@
                 <textarea id="message" name="message" cols="40" rows="4" placeholder="enter your message"></textarea>
                 <br />
                 <br />
-                <button type="submit">submit</button>
-                <button type="reset">reset</button>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
         </section>
         </form>
 
+    </article>
+    <footer style="background-color:white;text-align:center;">
+        <p>&COPY;2026 Sanath CK .All rights Reserved.</p>
     </footer>
 </body>
 
