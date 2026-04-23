@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,31 +17,49 @@
         <h1><b><span style="color:blue">Hi, &nbsp;</b></span> I'm Sanath CK</h1>
         <h2><span style="color:blue;">Full Stack Developer</span></h2>
 
-        <nav>
-            <ul class=" nav-menu">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
+        <!-- NAVIGATION -->
 
+        <nav id="nav-menu" class=" navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
         <section id="about">
-            <h3 style="background: linear-gradient(to right,white,blue); padding:10px;">About Me</h3>
+            <h3 style="background: linear-gradient(to right,white,blue); padding:5px;">About Me</h3>
             <p>Hi , Iam Sanath C Iam a Full Stack Developer</p>
             <figure>
                 <img src="./images/cartoon-boy-sitting-desk-laptop-front-him-cartoon-boy-sitting-desk-laptop-front-him-358662119.webp"
-                    width="400" alt="illustartion of a full stack developer working on a laptop">
+                    style="max-width:100%;" alt="Image of a web developer working on a laptop">
 
             </figure>
 
         </section>
         <article>
             <section id="skills">
-                <h3 style="background: linear-gradient(to right,white,blue); padding:10px;">My Skills</h3>
+                <h3 style="background: linear-gradient(to right,white,blue); padding:5px;">My Skills</h3>
                 <ul>
                     <li>Html & Css</li>
                     <li>Javascript</li>
@@ -50,7 +69,7 @@
         </article>
 
         <section id="projects">
-            <h3 style="background: linear-gradient(to right,white,blue); padding:10px;">Projects</h3>
+            <h3 style="background: linear-gradient(to right,white,blue); padding:5px;">Projects</h3>
             <ul>
                 <li>Personal Portfolio using html</li>
                 <a href="https://cksanath.github.io/sanath-s-portfolio/">view</a>
@@ -65,7 +84,7 @@
 
     <article>
         <section id="contact " style="text-align:center;">
-            <h3 style="background: linear-gradient(to right,white,blue); padding:10px;">Contact Me</h3>
+            <h3 style="background: linear-gradient(to right,white,blue); padding:5px;">Contact Me</h3>
 
             <form action="POST">
                 <label for="text">Name:</label>
@@ -103,6 +122,9 @@
     <footer style="background-color:white;text-align:center;">
         <p>&COPY;2026 Sanath CK .All rights Reserved.</p>
     </footer>
+
+
+
 </body>
 
 </html>

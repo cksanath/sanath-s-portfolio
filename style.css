@@ -30,29 +30,18 @@ body {
 
 }
 
-.nav-menu {
-    display: flex;
-    gap: 20px;
-    padding: 5px;
-    color: white
-}
+
 
 header h2 {
     margin-top: -30px;
     ;
 }
 
-nav {
-    background: radial-gradient(to right, white blue);
-    border: 2px solid blue;
-    display: flex;
-    justify-content: center;
-}
 
 nav ul li {
     background-color: white;
     font-size: large;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
 }
 
@@ -60,7 +49,7 @@ nav ul li {
 
 #about h3 {
     background-color: white;
-    padding: 10px;
+    padding: 5px;
 }
 
 form {
@@ -90,7 +79,7 @@ button {
     background-color: blue;
     color: white;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 15px;
 
 
 }
@@ -98,8 +87,114 @@ button {
 
 
 
+
+
 button:hover {
     background: #007bff;
     transition: 2s;
+
+}
+
+#nav-menu {
+    background: radial-gradient(to right, white rgb(0, 60, 255));
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* mobile screens */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    header h2 {
+        font-size: 1rem;
+        text-align: left;
+        display: none;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        text-align: left;
+        padding: 10px;
+    }
+
+    form {
+        padding: 20px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    input {
+        box-shadow: 3px 3px#e1e1ff;
+        width: 200px;
+        height: 30px;
+        border-radius: 5px;
+        border: 2px solid blue;
+
+    }
+
+    textarea {
+        border-radius: 5px;
+        border: 2px solid blue;
+        width: 250px;
+    }
+
+    button {
+        width: 100%;
+        border-radius: 5px;
+        ;
+    }
+
+}
+
+/* for tablet screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    main {
+        text-align: left;
+        padding: 15px;
+    }
+
+
+}
+
+/* for laptop screens */
+@media (min-width: 1025px) {
+
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+
+
+
+    header h1 {
+        margin-bottom: 30px;
+    }
+
 
 }
